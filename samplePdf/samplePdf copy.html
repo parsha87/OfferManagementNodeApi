@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Offer Template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      padding: 20px;
+    }
+
+    .header,
+    .footer {
+      margin-bottom: 20px;
+    }
+
+    .table,
+    .tac-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table th,
+    .table td,
+    .tac-table th,
+    .tac-table td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .table th {
+      background-color: #f0f0f0;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+
+    .signature {
+      margin-top: 40px;
+    }
+
+    .logo-row {
+      display: flex;
+      flex-wrap: nowrap;
+      /* Force one line */
+      align-items: center;
+      justify-content: flex-start;
+      /* Align left */
+      overflow-x: auto;
+      /* Allow scroll if too many images */
+      padding: 16px 0;
+      gap: 16px;
+    }
+
+    .logo-row img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 4px;
+      padding: 4px;
+      background-color: #f5f5f5;
+    }
+
+    .brand-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="#offerImage#" alt="Logo" style="max-width: 200px; height: auto; border-radius: 0px;" />
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <p style="margin: 0;"><strong>Ref No:</strong> #enquiryNo#</p>
+      <p style="margin: 0;"><strong>Date:</strong> #date#</p>
+    </div>
+
+    <p><strong>To,</strong><br />
+      #customerName#<br />
+      #custAddress#
+    </p>
+  </div>
+
+  <p><strong>Kind Attn:</strong>#cpName#</p>
+  <p><strong>RFQ No:</strong> #rfqNo#</p>
+
+  <p>Dear Sir,</p>
+  <p>We are pleased to offer the following against your enquiry dated <strong>#enquiryDate#</strong>:</p>
+
+  <!-- 🔽 This placeholder will be replaced by brand-wise summary + full tech table -->
+  {{technicalDetails}}
+
+  <p><strong>Total Package: #TotalPackage#</strong></p>
+
+  <p>Note:</p>
+  <ul>
+    <li>Taxes : #taxes#</li>
+    <li>INCOTerms : #stdIncoTerms#</li>
+    <li>Payment Terms : #stdPaymentTerms#</li>
+    <li>Validity : #deliveryTime#</li>
+
+    <!-- <li>Delivery Time : #deliveryTime#</li> -->
+  </ul>
+
+
+  <!-- <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+  <div style="text-align: left;">
+    <p>Thank you,<br /><strong>For Your Company Name</strong></p>
+  </div>
+
+  <div style="text-align: right;">
+    <p><strong>Authorized Signatory</strong></p>
+  </div>
+</div> -->
+
+
+
+  <!-- <div class="footer">
+    <p><strong>Shipping Address:</strong> #shipTo#</p>
+    <p><strong>Std. Inco Terms:</strong> #stdIncoTerms#</p>
+  </div> -->
+
+  <!-- 🔽 Logos row - replaced in backend -->
+  <div class="logo-row">
+    <img src="#marathon#" alt="Marathon" />
+    <img src="#weg#" alt="Weg" />
+    <img src="#cemp#" alt="Cemp" />
+    <img src="#bharatbijlee#" alt="Bharat Bijlee" />
+    <img src="#wolong#" alt="Wolong" />
+    <img src="#wolongatb#" alt="Wolong ATB" />
+    <img src="#brookcromton#" alt="Brook Crompton" />
+    <img src="#General_Electric_logo#" alt="GE" />
+    <img src="#kirloskar#" alt="Kirloskar" />
+    <img src="#hindustanelectric#" alt="Hindustan Electric" />
+    <img src="#schorch#" alt="Schorch" />
+  </div>
+</body>
+
+</html>

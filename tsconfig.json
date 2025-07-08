@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",              // CommonJS module system is suitable for Node.js
+    "declaration": true,                // Generates corresponding '.d.ts' files for TypeScript definition
+    "removeComments": true,             // Removes comments in the compiled output, which is good for production
+    "emitDecoratorMetadata": true,      // Enables metadata for decorators, necessary for NestJS
+    "experimentalDecorators": true,     // Allows experimental support for decorators
+    "target": "es2017",                 // Targeting ES2017 is generally good, but consider upgrading if possible
+    "sourceMap": true,                  // Useful for debugging, but may not be necessary in production
+    "outDir": "./dist",                 // Output directory for compiled files
+    "baseUrl": "./",                    // Base URL for module resolution
+    "incremental": true                 // Enables incremental compilation, which speeds up build times
+  },
+  "exclude": ["node_modules" , "dist"]           // Exclude node_modules from compilation
+}
