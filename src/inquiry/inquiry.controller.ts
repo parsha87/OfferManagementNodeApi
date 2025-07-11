@@ -233,7 +233,7 @@ export class InquiryController {
       await page.setContent(htmlBody, { waitUntil: 'networkidle0' });
 
       const pdfBuffer = await page.pdf({
-        format: 'A4',
+        format: 'a4',
         printBackground: true,
         margin: { top: '30px', bottom: '30px', left: '30px', right: '30px' },
       });
