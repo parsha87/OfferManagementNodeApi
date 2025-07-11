@@ -9,11 +9,11 @@ function typeormModuleOptions(): TypeOrmModuleOptions {
 
   return {
     type: 'mysql',
-    host: '97.74.85.133',
+    host: '31.97.139.154',
     port: 3306,
-    username: 'qms',
-    password: 'qms',
-    database: 'dbo',
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
     entities: [],
     autoLoadEntities: true,
 
